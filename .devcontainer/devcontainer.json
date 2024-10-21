@@ -13,11 +13,12 @@
   
 	"containerEnv": {
 	  "SELENIUM_HOST": "selenium",
-	  "DB_HOST": "postgres"
+	  "DB_HOST": "postgres",
+	  "WORKSPACE_FOLDER": "/workspaces/${localWorkspaceFolderBasename}"
 	},
   
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [5432, 4444],
+	"forwardPorts": [5432, 4444, 11434],
   
 	// Configure tool-specific properties.
 	"customizations": {
