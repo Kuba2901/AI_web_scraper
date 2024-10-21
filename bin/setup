@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "Installing app requirements..."
+cd app
+source .venv/bin/activate
+pip3 install -r .config/requirements.txt
+echo "The requirements have been installed..."
